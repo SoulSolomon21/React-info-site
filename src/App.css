@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background-color: rgb(42, 42, 54);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    /* position: absolute; */
+    color: aqua;
+    display: flex;
+    width: 100%;
+    height: 91px;
+    padding: 30px 25px;
+    background-color: #21222A;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav > img{
+    width: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+nav > h2 {
+    margin: auto;
+    color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-el {
+    /* margin: 50px; */
+    list-style: circle;
+    color: aliceblue;
+    background-image: url("./images/reactjs-icon\ 2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.main-el > ul {
+    padding-left: 50px; 
+}
+
+.main-el > h1 {
+    padding-left: 10px;
+}
+
+.main-el > ul > li {
+    list-style: disc;
+    padding-block: 10px;
+}
+
+.main-el > ul > li::marker {
+    font-size: 1.4rem;
+    color: aqua;
 }
